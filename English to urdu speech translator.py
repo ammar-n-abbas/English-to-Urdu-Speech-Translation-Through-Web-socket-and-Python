@@ -42,12 +42,12 @@ waveFile.writeframes(b''.join(frames))
 waveFile.close()
 
 speech_to_text = SpeechToTextV1(
-    username= "2b4386e1-0f5a-4cdf-8339-84b0f9f604af",
-    password= "gqShfpkXp3QE",
+    username= "**********************************",
+    password= "************",
     x_watson_learning_opt_out=False
 )
 
-with open(join(dirname(__file__), "D:\RCAI\watson\examples\En-Ur(En).wav"),
+with open(join(dirname(__file__), "(Location).wav"),
           'rb') as audio_file:
     English_speech_to_text=speech_to_text.recognize(
         audio_file, content_type='audio/wav', timestamps=True,
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
 import mp3play,time
 
-clip = mp3play.load(r'D:\RCAI\watson\examples\En-Ur(Ur).mp3')
+clip = mp3play.load(r'(Location).mp3')
 clip.play()
 time.sleep(5)
 clip.stop()
